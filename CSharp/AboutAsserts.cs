@@ -15,7 +15,7 @@ namespace DotNetKoans.CSharp
         [Koan(2)]
         public void AssertTruthWithMessage() 
         {
-            Assert.True(false, "This should be true -- Please fix this");
+            Assert.True(true, "This should be true -- Please fix this");
         }
 
         //To understand reality, we must compare our expectations against reality
