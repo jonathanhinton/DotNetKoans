@@ -49,7 +49,10 @@ namespace DotNetKoans.CSharp
         public void AWayNotToCheckThatAnObjectIsNull()
         {
             object obj = null;
+            //Assert.True(obj.Equals(null)); this was the initial code. The reason this does ont work is because the object is null and mehtods cannot be called on null. My solution below might not be correct but it works. Null does not mean no memory, it means no behavior.
             Assert.Equal(obj, null);
+            // 1. comment the line out. and take notes: cannot call methods on null
+            // 2. Assert.Equal(obj, null);
         }
     }
 }
