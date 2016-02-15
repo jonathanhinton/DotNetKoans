@@ -48,8 +48,8 @@ namespace DotNetKoans.CSharp
             //You can do multiple assignments on one line, but you 
             //still have to be explicit
             string firstName = "John", lastName = "Smith";
-            Assert.Equal(FILL_ME_IN, firstName);
-            Assert.Equal(FILL_ME_IN, lastName);
+            Assert.Equal("John", firstName);
+            Assert.Equal("Smith", lastName);
         }
     }
 }
