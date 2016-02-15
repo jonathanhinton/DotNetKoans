@@ -31,8 +31,9 @@ namespace DotNetKoans.CSharp
         [Koan(3)]
         public void CreateAStringWhichContainsDoubleQuotes()
         {
+            //including quotes string length ignores the back slash
             var str = "Hello, \"World\"";
-            Assert.Equal(FILL_ME_IN, str.Length);
+            Assert.Equal(14, str.Length);
         }
 
         [Koan(4)]
