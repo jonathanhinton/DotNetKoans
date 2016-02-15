@@ -42,7 +42,7 @@ namespace DotNetKoans.CSharp
             //The @ symbol creates a 'verbatim string literal'. 
             //Here's one thing you can do with it:
             var str = @"Hello, ""World""";
-            Assert.Equal(FILL_ME_IN, str.Length);
+            Assert.Equal(14, str.Length);
         }
 
         [Koan(5)]
