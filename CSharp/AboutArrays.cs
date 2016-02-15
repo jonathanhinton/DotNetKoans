@@ -64,8 +64,8 @@ namespace DotNetKoans.CSharp
         {
             var array = new[] { "peanut", "butter", "and", "jelly" };
 
-			Assert.Equal(new string[] { (string)FILL_ME_IN, (string)FILL_ME_IN }, array.Take(2).ToArray());
-			Assert.Equal(new string[] { (string)FILL_ME_IN, (string)FILL_ME_IN }, array.Skip(1).Take(2).ToArray());
+			Assert.Equal(new string[] { (string)"peanut", (string)"butter"}, array.Take(2).ToArray());
+			Assert.Equal(new string[] { (string)"butter", (string)"and" }, array.Skip(1).Take(2).ToArray());
         }
 
         [Koan(5)]
@@ -74,10 +74,10 @@ namespace DotNetKoans.CSharp
             var array = new[] { 1, 2 };
             Stack stack = new Stack(array);
             stack.Push("last");
-            Assert.Equal(FILL_ME_IN, stack.ToArray());
+            Assert.Equal(new object[] { (string)"last", (int)2, (int)1 }, stack.ToArray());
             var poppedValue = stack.Pop();
-            Assert.Equal(FILL_ME_IN, poppedValue);
-            Assert.Equal(FILL_ME_IN, stack.ToArray());
+            Assert.Equal((string)"last", poppedValue);
+            Assert.Equal(new object[] { (int)2, (int)1}, stack.ToArray());
         }
 
         [Koan(6)]
