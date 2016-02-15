@@ -25,7 +25,7 @@ namespace DotNetKoans.CSharp
         public void SingleQuotedStringsAreNotStrings()
         {
             var str = 'H';
-			Assert.Equal(typeof(FillMeIn), str.GetType());
+			Assert.Equal(typeof(Char), str.GetType());
         }
 
         [Koan(3)]
