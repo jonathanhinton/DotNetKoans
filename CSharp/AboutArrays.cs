@@ -91,16 +91,16 @@ namespace DotNetKoans.CSharp
             var list = new LinkedList<string>(array);
 
             list.AddFirst("Say");
-            Assert.Equal(FILL_ME_IN, list.ToArray());
+            Assert.Equal(new string[] { "Say", "Hello", "World"}, list.ToArray());
 
             list.RemoveLast();
-            Assert.Equal(FILL_ME_IN, list.ToArray());
+            Assert.Equal(new string[] { "Say", "Hello"}, list.ToArray());
 
             list.RemoveFirst();
-            Assert.Equal(FILL_ME_IN, list.ToArray());
+            Assert.Equal(new string[] { "Hello"}, list.ToArray());
 
             list.AddAfter(list.Find("Hello"), "World");
-            Assert.Equal(FILL_ME_IN, list.ToArray());
+            Assert.Equal(new string[] { "Hello", "World"}, list.ToArray());
         }
 
     }
