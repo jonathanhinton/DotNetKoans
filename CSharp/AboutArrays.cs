@@ -30,7 +30,7 @@ namespace DotNetKoans.CSharp
 
             //Are arrays 0-based or 1-based?
             Assert.Equal(42, array[((int)0)]);
-
+            //this is a way of casting in charp. (tyoe you want to be)your_type. Casting means that your changing the behavior. Arrays are 0 based because the index is offset from the first memory location.
             //This is important because...
             Assert.True(array.IsFixedSize);
 
@@ -43,7 +43,7 @@ namespace DotNetKoans.CSharp
             List<int> dynamicArray = new List<int>();
             dynamicArray.Add(42);
             Assert.Equal(array, dynamicArray.ToArray());
-
+            //.ToArray() creates a new array in a new memory location from the data in the dynamic array
             dynamicArray.Add(13);
             Assert.Equal((new int[] { 42, (int)13}), dynamicArray.ToArray());
         }
@@ -63,7 +63,7 @@ namespace DotNetKoans.CSharp
         public void SlicingArrays()
         {
             var array = new[] { "peanut", "butter", "and", "jelly" };
-
+            //Take(2) is not modifying the array, it is creating a duplicate array and modifying the dup.
 			Assert.Equal(new string[] { (string)"peanut", (string)"butter"}, array.Take(2).ToArray());
 			Assert.Equal(new string[] { (string)"butter", (string)"and" }, array.Skip(1).Take(2).ToArray());
         }
