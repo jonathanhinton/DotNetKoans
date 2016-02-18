@@ -31,7 +31,6 @@ namespace DotNetKoans.CSharp
         [Koan(3)]
         public void CreateAStringWhichContainsDoubleQuotes()
         {
-            //including quotes string length ignores the back slash
             var str = "Hello, \"World\"";
             Assert.Equal(14, str.Length);
         }
@@ -76,7 +75,9 @@ broken line";
             //the hardcoded escape sequence. A much better way
             //(We'll handle concatenation and better ways of that in a bit)
             var literalString = "I" + System.Environment.NewLine + "am a" + System.Environment.NewLine + "broken line";
-            var vebatimString = FILL_ME_IN;
+            var vebatimString = @"I
+am a
+broken line";
             Assert.Equal(literalString, vebatimString);
         }
 
