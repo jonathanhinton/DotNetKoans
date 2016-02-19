@@ -104,8 +104,8 @@ broken line";
             var strA = "Hello, ";
             var strB = "World";
             strA += strB;
-            Assert.Equal(FILL_ME_IN, strA);
-            Assert.Equal(FILL_ME_IN, strB);
+            Assert.Equal("Hello, World", strA);
+            Assert.Equal("World", strB);
         }
 
         [Koan(11)]
