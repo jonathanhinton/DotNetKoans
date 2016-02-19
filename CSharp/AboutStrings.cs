@@ -143,7 +143,7 @@ broken line";
 		public void AnyExpressionCanBeUsedInFormatString()
 		{
 			var str = String.Format("The square root of 9 is {0}", Math.Sqrt(9));
-			Assert.Equal(FILL_ME_IN, str);
+			Assert.Equal("The square root of 9 is 3", str);
 		}
 
 		[Koan(14)]
