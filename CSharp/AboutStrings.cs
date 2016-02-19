@@ -136,7 +136,7 @@ broken line";
 		{
 			var world = "World";
 			var str = String.Format("Hello, {0}", world);
-			Assert.Equal(FILL_ME_IN, str);
+			Assert.Equal("Hello, World", str);
 		}
 
 		[Koan(13)]
