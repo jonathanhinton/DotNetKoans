@@ -119,7 +119,7 @@ broken line";
             var originalString = strA;
             var strB = "World";
             strA += strB;
-            Assert.Equal(FILL_ME_IN, originalString);
+            Assert.Equal("Hello, ", originalString);
 
             //What just happened? Well, the string concatenation actually
             //takes strA and strB and creates a *new* string in memory
