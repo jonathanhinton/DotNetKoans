@@ -193,7 +193,7 @@ broken line";
 		public void BuiltInDateFormaters()
 		{
 			var str = string.Format("{0:t}", DateTime.Parse("12/16/2011 2:35:02 PM"));
-			Assert.Equal(FILL_ME_IN, str);
+			Assert.Equal("2:35 PM", str);
 		}
 
 		[Koan(21)]
