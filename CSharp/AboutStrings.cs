@@ -165,7 +165,7 @@ broken line";
 		public void SeperatorsCanBeAdded()
 		{
 			var str = string.Format("{0:n}", 123456);
-			Assert.Equal(FILL_ME_IN, str);
+			Assert.Equal("123,456.00", str);
 		}
 
 		[Koan(17)]
