@@ -200,7 +200,7 @@ broken line";
 		public void CustomeDateFormaters()
 		{
 			var str = string.Format("{0:t m}", DateTime.Parse("12/16/2011 2:35:02 PM"));
-			Assert.Equal(FILL_ME_IN, str);
+			Assert.Equal("P 35", str);
 		}
 		//These are just a few of the formatters available. Dig some and you may find what you need.
 
