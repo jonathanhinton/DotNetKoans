@@ -186,7 +186,7 @@ broken line";
 		public void MinimumNumberOfDisplayedDecimalsCanBeControled()
 		{
 			var str = string.Format("{0:.00}", 12.3);
-			Assert.Equal(FILL_ME_IN, str);
+			Assert.Equal("12.30", str);
 		}
 
 		[Koan(20)]
