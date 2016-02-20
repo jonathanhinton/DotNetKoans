@@ -276,7 +276,7 @@ broken line";
         {
             Assert.Equal(97, 'a');
             Assert.Equal(98, 'b');
-            Assert.Equal(FILL_ME_IN, 'b' == ('a' + 1));
+            Assert.Equal(true, 'b' == ('a' + 1));
         }
 
         [Koan(31)]
@@ -284,7 +284,7 @@ broken line";
         {
             var str = "Sausage Egg Cheese";
             string[] words = str.Split();
-            Assert.Equal(new[] { FILL_ME_IN }, words);
+            Assert.Equal(new[] { "Sausage", "Egg", "Cheese" }, words);
         }
 
         [Koan(32)]
