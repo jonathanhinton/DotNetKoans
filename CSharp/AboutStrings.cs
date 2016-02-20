@@ -268,7 +268,7 @@ broken line";
         public void YouCanGetASingleCharacterFromAString()
         {
             var str = "Bacon, lettuce and tomato";
-            Assert.Equal(FILL_ME_IN, str[0]);
+            Assert.Equal(66, str[0]);
         }
 
         [Koan(30)]
