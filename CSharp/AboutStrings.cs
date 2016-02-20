@@ -292,7 +292,7 @@ broken line";
         {
             var str = "the:rain:in:spain";
             string[] words = str.Split(':');
-            Assert.Equal(new[] { FILL_ME_IN }, words);
+            Assert.Equal(new[] { "the", "rain", "in", "spain" }, words);
         }
 
         [Koan(33)]
