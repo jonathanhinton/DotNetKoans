@@ -62,7 +62,7 @@ namespace DotNetKoans.CSharp
         [Koan(2)]
         public void AllClassesUltimatelyInheritFromAnObject()
         {
-            Assert.True(typeof(FillMeIn).IsAssignableFrom(typeof(Chihuahua)));
+            Assert.True(typeof(object).IsAssignableFrom(typeof(Chihuahua)));
         }
 
         [Koan(3)]
