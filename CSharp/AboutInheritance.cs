@@ -92,16 +92,16 @@ namespace DotNetKoans.CSharp
         public void SubclassesCanModifyExistingBehavior()
         {
             var chico = new Chihuahua("Chico");
-            Assert.Equal(FILL_ME_IN, chico.Bark());
+            Assert.Equal("yip", chico.Bark());
 
             //Note that even if we cast the object back to a dog
             //we still get the Chihuahua's behavior. It truly
             //"is-a" Chihuahua
             Dog dog = chico as Dog;
-            Assert.Equal(FILL_ME_IN, dog.Bark());
+            Assert.Equal("yip", dog.Bark());
 
             var fido = new Dog("Fido");
-            Assert.Equal(FILL_ME_IN, fido.Bark());
+            Assert.Equal("WOOF", fido.Bark());
         }
 
         public class ReallyYippyChihuahua : Chihuahua
