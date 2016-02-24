@@ -76,7 +76,7 @@ namespace DotNetKoans.CSharp
         public void SubclassesAddNewBehavior()
         {
             var chico = new Chihuahua("Chico");
-            Assert.Equal(FILL_ME_IN, chico.Wag());
+            Assert.Equal("Happy", chico.Wag());
 
             //We can search the public methods of an object 
             //instance like this:
