@@ -154,7 +154,7 @@ namespace DotNetKoans.CSharp
         public void SubclassesCanInvokeParentBehaviorUsingBase()
         {
             var ralph = new BullDog("Ralph");
-            Assert.Equal(FILL_ME_IN, ralph.Bark());
+            Assert.Equal("WOOF, GROWL", ralph.Bark());
         }
 
         public class GreatDane : Dog
