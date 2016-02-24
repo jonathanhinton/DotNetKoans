@@ -40,7 +40,7 @@ namespace DotNetKoans.CSharp
         [Koan(1)]
         public void ExtensionMethodsShowUpInTheCurrentClass()
         {
-            Assert.Equal(FILL_ME_IN, this.HelloWorld());
+            Assert.Equal("Hello!", this.HelloWorld());
         }
 
         [Koan(2)]
