@@ -123,7 +123,7 @@ namespace DotNetKoans.CSharp
         public void SubclassesCanRedefineBehaviorThatIsNotVirtual()
         {
             ReallyYippyChihuahua suzie = new ReallyYippyChihuahua("Suzie");
-            Assert.Equal(FILL_ME_IN, suzie.Wag());
+            Assert.Equal("WAG WAG WAG!!", suzie.Wag());
         }
 
         [Koan(7)]
