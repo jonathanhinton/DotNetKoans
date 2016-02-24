@@ -69,7 +69,7 @@ namespace DotNetKoans.CSharp
         public void SubclassesInheritBehaviorFromParentClass()
         {
             var chico = new Chihuahua("Chico");
-            Assert.Equal(FILL_ME_IN, chico.Name);
+            Assert.Equal("Chico", chico.Name);
         }
 
         [Koan(4)]
