@@ -204,7 +204,7 @@ namespace DotNetKoans.CSharp
             }
             catch (Exception ex)
             {
-                Assert.Equal(typeof(FillMeIn), ex.GetType());
+                Assert.Equal(typeof(InvalidOperationException), ex.GetType());
             }
         }
 
