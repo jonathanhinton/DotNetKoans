@@ -259,7 +259,7 @@ namespace DotNetKoans.CSharp
 			{
 				result = "dos";
 			}
-			Assert.Equal(FILL_ME_IN, result);
+			Assert.Equal("dos", result);
 		}
 		[Koan(25)]
 		public void InitializingADictionary()
