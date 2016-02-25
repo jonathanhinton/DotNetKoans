@@ -112,7 +112,7 @@ namespace DotNetKoans.CSharp
 			//You can add multiple items to a list at once
 			List<int> list = new List<int>();
 			list.AddRange(new[] { 1, 2, 3 });
-			Assert.Equal(FILL_ME_IN, list.Count);
+			Assert.Equal(3, list.Count);
 		}
 		[Koan(10)]
 		public void RandomAccess()
