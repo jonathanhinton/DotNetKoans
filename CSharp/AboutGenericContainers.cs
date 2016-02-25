@@ -45,8 +45,8 @@ namespace DotNetKoans.CSharp
 			ArrayList list = new ArrayList();
 			list.Add(42);
 			list.Add("fourty two");
-			Assert.Equal(FILL_ME_IN, list[0]);
-			Assert.Equal(FILL_ME_IN, list[1]);
+			Assert.Equal((int)42, list[0]);
+			Assert.Equal((string)"fourty two", list[1]);
 
 			//While there are a few cases where it could be nice, instead what it means is that 
 			//anytime your code works with an array list you have to check that the element is 
