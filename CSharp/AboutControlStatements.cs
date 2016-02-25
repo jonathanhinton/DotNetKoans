@@ -120,9 +120,9 @@ namespace DotNetKoans.CSharp
             if (myType is AboutMethods)
                 isAboutMethods = true;
 
-            Assert.Equal(FILL_ME_IN, isKoan);
-            Assert.Equal(FILL_ME_IN, isAboutControlStatements);
-            Assert.Equal(FILL_ME_IN, isAboutMethods);
+            Assert.Equal(true, isKoan);
+            Assert.Equal(true, isAboutControlStatements);
+            Assert.Equal(false, isAboutMethods);
 
         }
 
