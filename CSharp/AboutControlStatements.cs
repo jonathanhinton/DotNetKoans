@@ -99,7 +99,7 @@ namespace DotNetKoans.CSharp
 
             int x = nullableInt ?? 42;
 
-            Assert.Equal(FILL_ME_IN, x);
+            Assert.Equal(42, x);
         }
 
         [Koan(9)]
