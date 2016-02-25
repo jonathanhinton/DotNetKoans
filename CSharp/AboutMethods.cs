@@ -46,7 +46,7 @@ namespace DotNetKoans.CSharp
         [Koan(2)]
         public void ExtensionMethodsWithParameters()
         {
-            Assert.Equal(FILL_ME_IN, this.SayHello("Cory"));
+            Assert.Equal("Hello, Cory!", this.SayHello("Cory"));
         }
 
         [Koan(3)]
