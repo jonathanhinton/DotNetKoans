@@ -24,7 +24,7 @@ namespace DotNetKoans.CSharp
 		{
 			ArrayList list = new ArrayList();
 			System.Reflection.MethodInfo method = list.GetType().GetMethod("Add");
-			Assert.Equal(typeof(FillMeIn), method.GetParameters()[0].ParameterType);
+			Assert.Equal(typeof(Object), method.GetParameters()[0].ParameterType);
 		}
 		[Koan(3)]
 		public void MustCastWhenRetrieving()
