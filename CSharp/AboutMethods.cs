@@ -62,7 +62,7 @@ namespace DotNetKoans.CSharp
         [Koan(4)]
         public void ExtendingCoreClasses()
         {
-            Assert.Equal(FILL_ME_IN, "Cory".SayHi());
+            Assert.Equal("Hi, Cory", "Cory".SayHi());
         }
 
         //Of course, any of the parameter things you can do with 
