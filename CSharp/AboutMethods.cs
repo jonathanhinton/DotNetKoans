@@ -168,9 +168,9 @@ namespace DotNetKoans.CSharp
         [Koan(11)]
         public void CallingGenericMethods()
         {
-            Assert.Equal(typeof(FillMeIn), GiveMeBack<int>(1).GetType());
+            Assert.Equal(typeof(Int32), GiveMeBack<int>(1).GetType());
 
-            Assert.Equal(FILL_ME_IN, GiveMeBack<string>("Hi!"));
+            Assert.Equal("Hi!", GiveMeBack<string>("Hi!"));
         }
     }
 }
