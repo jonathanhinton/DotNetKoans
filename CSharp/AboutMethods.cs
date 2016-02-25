@@ -52,7 +52,7 @@ namespace DotNetKoans.CSharp
         [Koan(3)]
         public void ExtensionMethodsWithVariableParameters()
         {
-            Assert.Equal(FILL_ME_IN, this.MethodWithVariableArguments("Cory", "Will", "Corey"));
+            Assert.Equal(new string[] {"Cory", "Will", "Corey"}, this.MethodWithVariableArguments("Cory", "Will", "Corey"));
         }
 
         //Extension methods can extend any class my referencing 
