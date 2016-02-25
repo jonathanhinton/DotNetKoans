@@ -206,8 +206,8 @@ namespace DotNetKoans.CSharp
 			dictionary["one"] = "uno";
 			dictionary["two"] = "dos";
 			//The most common way to locate data is with the subscript notation.
-			Assert.Equal(FILL_ME_IN, dictionary["one"]);
-			Assert.Equal(FILL_ME_IN, dictionary["two"]);
+			Assert.Equal("uno", dictionary["one"]);
+			Assert.Equal("dos", dictionary["two"]);
 		}
 		[Koan(21)]
 		public void AccessingDataNotAdded()
