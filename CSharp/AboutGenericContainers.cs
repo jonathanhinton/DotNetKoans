@@ -97,7 +97,7 @@ namespace DotNetKoans.CSharp
 			//Just as with Array, list will work with any type
 			List<Widget> list = new List<Widget>();
 			list.Add(new Widget());
-			Assert.Equal(FILL_ME_IN, list.Count);
+			Assert.Equal(1, list.Count);
 		}
 		[Koan(8)]
 		public void InitializingWithValues()
