@@ -145,8 +145,8 @@ namespace DotNetKoans.CSharp
 		public void RemovingItems()
 		{
 			List<int> list = new List<int> { 2, 1, 2, 3 };
-			list.Remove(2);
-			Assert.Equal(FILL_ME_IN, list.ToArray());
+			list.Remove(2); //it looks like it finds the first instance of 2 and then removes it, once that is complete it is satisfied to leave any remaining 2's in the array.
+			Assert.Equal(new int[] { 1, 2, 3}, list.ToArray());
 		}
 		[Koan(15)]
 		public void StackPushPop()
