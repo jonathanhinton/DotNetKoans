@@ -34,7 +34,7 @@ namespace DotNetKoans.CSharp
 			ArrayList list = new ArrayList();
 			list.Add(42);
 			int x = 0;
-			//x = (int)list[0];
+			x = (int)list[0];
 			Assert.Equal(x, 42);
 		}
 		[Koan(4)]
