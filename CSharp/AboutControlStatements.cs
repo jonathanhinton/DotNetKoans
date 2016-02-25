@@ -54,7 +54,7 @@ namespace DotNetKoans.CSharp
             if (true)
                 b = true;
 
-            Assert.Equal(FILL_ME_IN, b);
+            Assert.Equal(true, b);
         }
 
         [Koan(5)]
