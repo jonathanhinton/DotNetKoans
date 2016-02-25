@@ -135,7 +135,7 @@ namespace DotNetKoans.CSharp
         public void CallingProtectedMethodsOnAnInstance()
         {
             StateSecret secret = new StateSecret();
-            Assert.Equal(FILL_ME_IN, secret.InformationLeak());
+            Assert.Equal("This is secret", secret.InformationLeak());
         }
 
         //But, we can't call the private methods of InnerSecret
