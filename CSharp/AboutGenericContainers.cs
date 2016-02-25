@@ -170,7 +170,7 @@ namespace DotNetKoans.CSharp
 			stack.Push(2);
 			stack.Push(3);
 
-			Assert.Equal(FILL_ME_IN, stack.ToArray());
+			Assert.Equal(new int[] { 3, 2, 1 }, stack.ToArray());
 		}
 		[Koan(17)]
 		public void PeekingIntoAQueue()
