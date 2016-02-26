@@ -64,7 +64,7 @@ namespace DotNetKoans.CSharp
 		}
 		private void PassMeTheDelegate(BinaryOp passed)
 		{
-            Assert.Equal(FILL_ME_IN, passed(3,3));
+            Assert.Equal(6, passed(3,3));
         }
 		[Koan(6)]
 		public void DelegatesCanBePassed()
