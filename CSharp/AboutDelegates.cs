@@ -194,7 +194,7 @@ namespace DotNetKoans.CSharp
 
 			Array.ForEach(greeting.ToCharArray(), s.Look);
 
-			Assert.Equal(FILL_ME_IN, s.Letters);
+			Assert.Equal("Hello world", s.Letters);
 		}
 
 		private bool IntEqualsFourtyTwo(int x)
