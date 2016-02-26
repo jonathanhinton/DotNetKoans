@@ -164,7 +164,7 @@ namespace DotNetKoans.CSharp
 		{
 			// Because the delegate is a template, it also works with any other type. 
 			Action<string> s = AssertStringEqualsFourtyTwo;
-			s((string)FILL_ME_IN);
+			s((string)"42");
 		}
 		[Koan(14)]
 		public void BuiltInActionDelegateIsOverloaded()
