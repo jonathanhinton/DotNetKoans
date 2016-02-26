@@ -53,7 +53,7 @@ namespace DotNetKoans.CSharp
 		public void DelegatesCanReferenceStaticMethods()
 		{
 			BinaryOp op = MyMath.Subtract;
-			Assert.Equal(FILL_ME_IN, op.Method.Name);
+			Assert.Equal("Subtract", op.Method.Name);
 		}
 		[Koan(5)]
 		public void MethodsCalledViaDelegate()
