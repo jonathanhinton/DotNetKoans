@@ -121,7 +121,7 @@ namespace DotNetKoans.CSharp
 			Curry adding = f.Add5;
 			adding += f.Add10;
 			//Delegates may have more than one method attached, but only the result of the last method is returned.
-			Assert.Equal(FILL_ME_IN, adding(5));
+			Assert.Equal(15, adding(5));
 		}
 		[Koan(11)]
 		public void RemovingMethods()
