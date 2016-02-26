@@ -311,9 +311,9 @@ namespace DotNetKoans.CSharp
 				one[item.Key] = item.Value;
 			}
 
-			Assert.Equal(FILL_ME_IN, one["jim"]);
-			Assert.Equal(FILL_ME_IN, one["jenny"]);
-			Assert.Equal(FILL_ME_IN, one["amy"]);
+			Assert.Equal(54, one["jim"]);
+			Assert.Equal(26, one["jenny"]);
+			Assert.Equal(20, one["amy"]);
 		}
 	}
 }
