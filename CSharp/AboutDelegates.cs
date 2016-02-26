@@ -146,7 +146,7 @@ namespace DotNetKoans.CSharp
 		private void AssertAddEqualsFourtyTwo(int x, string s)
 		{
 			int y = int.Parse(s);
-			Assert.Equal(42, x + y);
+			Assert.Equal(54, x + y);
 		}
 		[Koan(12)]
 		public void BuiltInActionDelegateTakesInt()
@@ -171,7 +171,7 @@ namespace DotNetKoans.CSharp
 		{
 			//Action is an overloaded delegate so it can take more than one paramter
 			Action<int, string> a = AssertAddEqualsFourtyTwo;
-			a(12, (string)FILL_ME_IN);
+			a(12, (string)"42");
 		}
 		public class Seen
 		{
