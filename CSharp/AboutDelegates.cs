@@ -40,7 +40,7 @@ namespace DotNetKoans.CSharp
 		{
 			MyMath math = new MyMath();
 			BinaryOp op = new BinaryOp(math.Add);
-			Assert.Equal(FILL_ME_IN, op.Method.Name);
+			Assert.Equal("Add", op.Method.Name);
 		}
 		[Koan(3)]
 		public void DelegatesCanBeAssigned()
