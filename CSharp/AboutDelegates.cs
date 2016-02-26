@@ -130,7 +130,7 @@ namespace DotNetKoans.CSharp
 			Curry adding = f.Add5;
 			adding += f.Add10;
 			Assert.Equal(2, adding.GetInvocationList().Length);
-            adding -= f.Add5;
+            adding -= f.Add5; //remove Add5
 			Assert.Equal(1, adding.GetInvocationList().Length);
 			Assert.Equal("Add10", adding.Method.Name);
 		}
@@ -157,7 +157,7 @@ namespace DotNetKoans.CSharp
 			//  public delgate void Action<T>(T obj);
 
 			Action<int> i = AssertIntEqualsFourtyTwo;
-			i((int)FILL_ME_IN);
+			i((int)42);
 		}
 		[Koan(13)]
 		public void BuiltInActionDelegateTakesString()
