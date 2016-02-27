@@ -71,7 +71,7 @@ namespace DotNetKoans.CSharp
 													{
 														return x.ToString(); 
 													});
-			Assert.Equal(FILL_ME_IN, anonymous);
+			Assert.Equal(new string[] { "1", "2", "3", "4"}, anonymous);
 			//The => pair is spoken as "going into". If you were talking about this 
 			//code with a peer, you would say "x going into..."
 		}
