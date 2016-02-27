@@ -274,7 +274,7 @@ namespace DotNetKoans.CSharp
 			//If you specify more than one parameter, then you are specifying the paramter types as well.
 
 			Func<string> d = FirstMonth;
-			Assert.Equal(FILL_ME_IN, d());
+			Assert.Equal("January", d());
 		}
 		[Koan(21)]
 		public void FunctionReturnsInt()
