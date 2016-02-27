@@ -107,7 +107,7 @@ namespace DotNetKoans.CSharp
 													{
 														return x.ToString();
 													});
-			Assert.Equal(FILL_ME_IN, anonymous);
+			Assert.Equal(new string[] { "1", "2", "3", "4"}, anonymous);
 		}
 		[Koan(7)]
 		public void BlockNotNeededOnSingleStatementLambdas()
