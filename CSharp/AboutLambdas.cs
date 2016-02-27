@@ -50,7 +50,7 @@ namespace DotNetKoans.CSharp
 			}
 			var numbers = new[] { 4, 5, 6, 7, 8, 9 };
 			//toFind is not available here, yet criteria still works
-			Assert.Equal(FILL_ME_IN, Array.FindIndex(numbers, criteria));
+			Assert.Equal(3, Array.FindIndex(numbers, criteria));
 		}
 		[Koan(4)]
 		public void LambdaExpressionsAreShorthand()
