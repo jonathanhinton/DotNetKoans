@@ -119,7 +119,7 @@ namespace DotNetKoans.CSharp
 			});
 			var lambda = Array.ConvertAll(numbers, x => x.ToString());
 			//When you have only one statement, the curly brackets are not needed. What other two things are also missing?
-			Assert.Equal(FILL_ME_IN, anonymous);
+			Assert.Equal(new string[]{ "1", "2", "3", "4"}, anonymous);
 		}
 	}
 }
