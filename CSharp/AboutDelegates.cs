@@ -238,7 +238,7 @@ namespace DotNetKoans.CSharp
 			//Predicate can be used to find an element in an array
 			var countries = new []{ "Greece", "Spain", "Uruguay", "Japan" };
 
-			Assert.Equal(FILL_ME_IN, Array.Find(countries, StartsWithS));
+			Assert.Equal("Spain", Array.Find(countries, StartsWithS));
 		}
 
 		private bool IsInSouthAmerica(string country)
