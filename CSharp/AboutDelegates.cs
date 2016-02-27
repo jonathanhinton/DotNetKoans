@@ -312,7 +312,7 @@ namespace DotNetKoans.CSharp
 			Comparison<Car> by = SortByModel;
 			Array.Sort(cars, by);
 
-			Assert.Equal(FILL_ME_IN, cars[0].Model);
+			Assert.Equal("GTV-6", cars[0].Model);
 		}
 
 		private string Stringify(int x)
