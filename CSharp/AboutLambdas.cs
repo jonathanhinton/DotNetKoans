@@ -31,7 +31,7 @@ namespace DotNetKoans.CSharp
 			//In C# this is called accessing an Outer Variable. In other languages it is called closure. 
 			var numbers = new[] { 4, 5, 6, 7, 8, 9 };
 			int toFind = 7;
-			Assert.Equal(FILL_ME_IN, Array.FindIndex(numbers, delegate(int x)
+			Assert.Equal(3, Array.FindIndex(numbers, delegate(int x)
 													{
 														return x == toFind;
 													}));
